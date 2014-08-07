@@ -10,11 +10,12 @@ public class ReverseArrayWithoutIteration<T> {
 				int mid = ((startIdx+endIdx)/2);
 				T[] leftArray = reverseArray(array, 0, mid);
 				T[] rightArray = reverseArray(array, mid+1, endIdx);
-				System.arraycopy(rightArray, 0, rightArray, 0, rightArray.length-1);
-				System.arraycopy(leftArray, 0, returnArray, rightArray.length, leftArray.length);
+				//System.arraycopy(rightArray, 0, rightArray, 0, rightArray.length-1);
+				//System.arraycopy(leftArray, 0, returnArray, rightArray.length, leftArray.length);
 			}
 			
 		}
+		return array;
 	}
 
 	public static void main(String[] args) {
@@ -28,6 +29,6 @@ public class ReverseArrayWithoutIteration<T> {
 			System.out.println(string + " ");
 		}
 		
-		Long.valueOf("5")
+		Long.valueOf("5");
 	}
 }
