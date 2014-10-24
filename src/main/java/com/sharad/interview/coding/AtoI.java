@@ -41,11 +41,9 @@ public class AtoI {
 
 	public static boolean validateInput(String input) {
 		boolean returnValue = false;
-		if (input.matches("^[+,-]?\\d*$")) {
+		if (input.matches("^[+,-]?\\d*$") && !(input.length() < 1)) {
 			returnValue = true;
-		} else if (!(input.length() < 1)) {
-			returnValue = true;
-		}
+		} 
 		return returnValue;
 	}
 
